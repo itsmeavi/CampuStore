@@ -1,0 +1,178 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17 May, 2016, 4:55:22 PM
+    Author     : avijeet
+*/
+
+body {
+    font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+}
+
+h1 {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+h3 {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 15.4px;
+}
+p {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+}
+label {
+        font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 15px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 20px;
+        padding-top: 10px;
+}
+blockquote {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 30px;
+}
+pre {
+	font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	line-height: 18.5714px;
+}
+
+
+.jumbotron{
+    position: relative;
+    top: 50px;
+    height: 500px;
+    background: #94090D;
+    color: white;
+}
+
+.container:not(.nav-container) {
+    position: relative;
+    top: 50px;
+}
+
+.navbar {
+    background-color: #D40D12;
+}
+
+nav.navbar > div.container {
+    background-color: #D40D12;
+}
+
+nav.navbar .navbar-brand {
+    color: whitesmoke;
+}
+
+nav.navbar .navbar-nav > li > a {
+    color: whitesmoke;
+}
+
+nav.navbar .navbar-nav > li > a:hover {
+    color: whitesmoke;
+    background: #94090D;
+}
+
+nav.navbar .navbar-nav > li > a:focus {
+    color: whitesmoke;
+    background: #94090D;
+}
+
+.main-menu {
+    background-color: #5C0002;
+    position: relative;
+}
+.sub-menu {
+    display: none;
+    background: #5C0002;
+    position: absolute;
+}
+
+.sub-menu > li > a {
+    color: whitesmoke;
+}
+
+.main-menu:hover ul.sub-menu {
+    display: block;
+}
+
+#carouselButtons {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+}
+.carousel {
+  background: #94090D;
+}
+.carousel .item {
+  height: 400px;
+  width: 100%;
+}
+.carousel .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 600px;
+  width: 500px;
+}
+
+
+.priceBadge {
+    background: #9c0000;
+}
+
+.itemImage {
+    position: relative;
+    top: 5px;
+}
+
+.itemLink {
+    background: #e3e3e3;
+    position: relative;
+    margin-top: 4px;
+}
+
+.itemLink > a > h2 {
+    color: #94090D;
+}
+
+.itemLink > a:hover {
+    text-decoration: none;
+}
+
+.itemLink > a > h2:hover {
+    color: #D40D12;
+    text-decoration: none;
+}
+
+.itemLink:hover {
+    background: #bfbfbf;
+    color: #D40D12;
+    text-decoration: none;
+}

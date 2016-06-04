@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/styles/campuStoreStyles.css">
+        
+        <script src="/CampuStore/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/CampuStore/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/CampuStore/scripts/campuStoreScripts.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container nav-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar" data-target="#navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-book fa-fw"></i>CampuStore</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                        <li><a href="aboutus.html"><i class="glyphicon glyphicon-info-sign"></i> About</a></li>
+                        <li class ="main-menu mainMenuWrapper"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Study Materials<span class="caret"></span></a>
+                            <ul class="sub-menu dropdown-menu subMenuWrapper">
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">E-Books</a></li>
+                                <li><a href="#">Magazines</a></li>
+                                <li><a href="#">Journals</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu mainMenuWrapper"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stationery Items<span class="caret"></span></a>
+                            <ul class="sub-menu dropdown-menu subMenuWrapper">
+                                <li><a href="#">Drafters</a></li>
+                                <li><a href="#">Drawing Boxes</a></li>
+                                <li><a href="#">Paper Holders</a></li>
+                                <li><a href="#">Lab Aprons</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#"><span class="glyphicon glyphicon-log-in"></span> Username </a>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+        <div class="container" style="position: relative; top: 100px;">
+            <div class="row">
+                
+                <!-- Repeat on the list on this block -->
+                
+                <div class="col-xs-10 col-xs-offset-1 col-md-3 col-md-offset-1 itemLink" style="text-align: center">
+                    <a href="#">
+                        <img class="itemImage" src="icons/apron.jpg" style="height: 200px; width: 200px;">
+                        <h2>Apron Title</h2>
+                        <hr>
+                        <h2><span class="badge priceBadge">$20</span></h2>
+                    </a>
+                </div>
+                
+                <!-- End Block -->
+                
+            </div>
+        </div>
+        
+    </body>
+</html>

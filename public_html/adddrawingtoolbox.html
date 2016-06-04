@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/bootstrap/dist/css/bootstrap-social.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/bower_components/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="/CampuStore/styles/campuStoreStyles.css">
+        
+        <script src="/CampuStore/bower_components/jquery/dist/jquery.js"></script>
+        <script src="/CampuStore/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/CampuStore/scripts/campuStoreScripts.js"></script>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <div class="container nav-container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar" data-target="#navbar">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#"><i class="fa fa-book fa-fw"></i>CampuStore</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+                        <li><a href="aboutus.html"><i class="glyphicon glyphicon-info-sign"></i> About</a></li>
+                        <li class ="main-menu mainMenuWrapper"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Study Materials<span class="caret"></span></a>
+                            <ul class="sub-menu dropdown-menu subMenuWrapper">
+                                <li><a href="#">Books</a></li>
+                                <li><a href="#">E-Books</a></li>
+                                <li><a href="#">Magazines</a></li>
+                                <li><a href="#">Journals</a></li>
+                            </ul>
+                        </li>
+                        <li class="main-menu mainMenuWrapper"><a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Stationery Items<span class="caret"></span></a>
+                            <ul class="sub-menu dropdown-menu subMenuWrapper">
+                                <li><a href="#">Drafters</a></li>
+                                <li><a href="#">Drawing Boxes</a></li>
+                                <li><a href="#">Paper Holders</a></li>
+                                <li><a href="#">Lab Aprons</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                           <a role="button"><span class="glyphicon glyphicon-log-in"></span> Username</a> 
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </nav>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Add Drawing Tool Box</h1>
+                </div>
+                <div class="col-xs-12">
+                    <hr>
+                </div>
+                <div class="col-xs-8">
+                    <form class="form-horizontal">
+                        
+                        <div class="form-group">
+                            <label for="companyName" class="control-label col-xs-12 col-sm-4">
+                                Add Company Name:
+                            </label>
+                            <div class="col-xs-2 col-sm-1">
+                                <input type="text" class="form-control" id="companyName" name="companyName">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="description" class="control-label col-xs-12 col-sm-4">
+                                Add Description:
+                            </label>
+                            <div class="col-xs-2 col-sm-1">
+                                <textarea class="form-control" id="description" name="description" rows="12"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="price" class="control-label col-xs-12 col-sm-4">
+                                Add price:
+                            </label>
+                            <div class="col-xs-12 col-sm-3">
+                                <input class="form-control" type="number" step="0.001" id="price" name="price">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="control-label col-xs-12 col-sm-4" for="drawingToolBoxImageUpload">Upload image:</label>
+                            <div class="col-xs-4">
+                                <input type="file" id="drawingToolBoxImageUpload" name="imageUpload">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary col-xs-2 col-sm-2 col-sm-offset-3">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+                
+                <div class="col-xs-4">
+                    <img id="showDrawingToolBoxImage" height="400" width="400">
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            document.getElementById("drawingToolBoxImageUpload").onchange = function () {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    // get loaded data and render thumbnail.
+                    document.getElementById("showDrawingToolBoxImage").src = e.target.result;
+                };
+
+                // read the image file as a data URL.
+                reader.readAsDataURL(this.files[0]);
+            };
+        </script>
+    </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "CampuStore",
+  "version": "1.0.0",
+  "main": "path/to/main.css",
+  "ignore": [
+    ".jshintrc",
+    "**/*.txt"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "Scrollify": "^0.1.14"
+  },
+  "resolutions": {
+    "jquery": "^2.2.3"
+  }
+}
